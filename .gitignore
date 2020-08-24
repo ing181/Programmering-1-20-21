@@ -1,6 +1,6 @@
 # Ignore Everything
 *
-# But not
-!**/*.cpp
+# But not .cpp
+!*.cpp
 !.gitignore
 !README.md
