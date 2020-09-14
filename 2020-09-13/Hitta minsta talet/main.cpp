@@ -66,7 +66,7 @@ int main()
     else {
         cout << a << " är minsta talet (no 3)" << endl; // Om vi kommit ända hit är det bara a kvar
     }
-    // no 4A
+    // no 4
     if ( ( ( a > b ) || ( a > c ) ) && ( b <= c ) ) { // ( ( a > b ) || ( a > c ) ) Om sant, kan inte a vara minst.
         // det måste vara b eller c. Om ( b <= c ) är sant...
         cout << b << " är minsta talet (no 4)" << endl; // ..så är det b
