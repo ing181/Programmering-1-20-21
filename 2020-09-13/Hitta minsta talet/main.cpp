@@ -79,7 +79,27 @@ int main()
         else {
             cout << a << " är minsta talet (no 4)" << endl;  // Bara a kvar, om ingen av de andra if-satserna är sann måste a vara minst.
         }
-    // no 5
+		
+		
+	// no 5
+    if ( (a <= b) && (a <= c) ) {
+        cout << a << " är minsta talet (no 4)" << endl;
+	}
+
+        else if ( (b <= a) && (b <= c) ) {
+            cout << b << " är minsta talet (no 4)" << endl;
+		}
+
+            else {
+				
+				       cout << b << " är minsta talet (no 4)" << endl;
+			}
+				
+		
+		
+		
+		
+    // no 6
     // En utmärkt algoritm som är lätt att förstå.
     int temp = a;
     if ( b < temp ) {
