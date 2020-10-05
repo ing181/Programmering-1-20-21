@@ -16,7 +16,7 @@ int main()
     cout << "Antalet platser i numbers " << a << endl;  // 7
 // Funktion som sorterar en array i stigande ordning
 // sort är en inbygd funktion (funktioner kommer efter provet)
-// Argumenten (det som står i ( ) är pekare, variabler som innehåller
+// Argumenten, det som står i ( ) är pekare, variabler som innehåller
 // adressen (adressen i RAM-minnet), till arryen numbers
     sort ( numbers, numbers + a ); //Sortering av alla användarens tal
     // så att det den skriver ut blir det minsta
@@ -27,7 +27,7 @@ int main()
     // Vi kollar varje efterföljande plats, är
     // talet mindre, hamnar det i temp.
     // Annars händer inget
-    for ( int i = 0; i < 8; i++ ) {
+    for ( int i = 1; i < 8; i++ ) {
         if ( numbers[i] < temp ) {
             temp = numbers[i];
         }
