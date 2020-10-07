@@ -22,16 +22,16 @@ int main()
         antalGiss++;
         if ( gissa < hemligtTal ) {
             cout << "Guess number " << antalGiss << ". You guessed number " << gissa << " Too small, guess again" << endl;
-//            lower = gissa;
-//            gissa = lower + ( rand() % (upper-lower) );
+            lower = gissa;
+            gissa = lower + ( rand() % (upper-lower) );
         }
         else
             if ( gissa > hemligtTal ) {
                 cout << "Guess number " << antalGiss << ". You guessed number " << gissa << " Too big, guess again" << endl;
-//                upper = gissa;
-//                gissa = lower + ( rand() % (upper-lower) );
+                upper = gissa;
+                gissa = lower + ( rand() % (upper-lower) );
             }
-        gissa = ( rand() % 1000 );
+       // gissa = ( rand() % 1000 );
     }
     while ( hemligtTal != gissa );
     cout << "You guessed right! " << gissa << " it is"  << endl;

@@ -7,16 +7,22 @@ Hur man genom att gissa smart kan minska antalet gissningsförsök */
 using namespace std;
 int main()
 {
-    int gissa;
-    cout << "Antalet sekunder sedan 1 januari 1970 " << time(NULL) << endl;
-    srand ( 34 ); //initierar ett startvärde för slumpen.
+    int slump;
+    int sek = time(NULL);
+    cout << "Antalet sekunder sedan 1 januari 1970 " << sek << endl;
+    srand ( sek ); //initierar ett startvärde för slumpen.
+    // srand ( time(NULL) ); // samma som rad 10 och 12
 
-   // srand ( time ( NULL ) ); //initierar ett startvärde för slumpen.
+   for (int i=0; i<5; i++) {
+   // Ett slumptal som ligger mellan
+   // 0 och största möjliga slumptal
+   // som finns. Beror på din dator.
+   cout << "Största slumptalet är " << RAND_MAX << endl;
+   cout << rand() << endl; // mellan 0 och 32767
 
-   for (int i=0; i<25; i++) {
-   gissa = ( rand() % 1000 );
+   slump = 1+( rand() % 6 ); // mellan 1 och 6
 
-   cout << "Slumptal " << i << " är " << gissa << endl;
+   cout << "Tärningskast " << i << " är " << slump << endl;
    }
 
     return 0;
