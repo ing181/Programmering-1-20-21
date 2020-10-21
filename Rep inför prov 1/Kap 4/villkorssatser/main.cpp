@@ -4,6 +4,15 @@ using namespace std;
 if, switch
 Logiska operatorer */
 int main() {
+    int i;
+    if (i = 5.9) {
+        cout << "FUNKAR" << endl;
+    }
+
+    // % operatorn OBS! Endast med heltal
+    int f = 7.88;
+    int rest = f % 2;
+
     bool b;
     int tal = 5;
     b = (tal < 3);
