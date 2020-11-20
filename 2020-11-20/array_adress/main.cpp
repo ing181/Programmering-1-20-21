@@ -50,6 +50,6 @@ void faltFunktion(int f[]) {
     cout << endl;
     f[1] = 101; // Här förändras det som finns på
     // adressen f[1]
-    // f[i] i funktionen och falt[1] i huvudprogrammet
+    // f[1] i funktionen och falt[1] i huvudprogrammet
     // samma sak.
 }
