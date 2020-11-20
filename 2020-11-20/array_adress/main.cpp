@@ -32,7 +32,7 @@ int main() {
     faltFunktion(falt);
 
     for (int i=0; i<3; i++) {
-        cout << falt[i] << " ";
+        cout << falt[i] << " "; // 99 101 3
     }
     cout << endl;
 
@@ -51,5 +51,5 @@ void faltFunktion(int f[]) {
     f[1] = 101; // Här förändras det som finns på
     // adressen f[1]
     // f[i] i funktionen och falt[1] i huvudprogrammet
-    // samma ska.
+    // samma sak.
 }
